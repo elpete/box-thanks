@@ -1,0 +1,34 @@
+{
+    "name":"box-thanks",
+    "version":"0.0.0",
+    "author":"",
+    "location":"elpete/box-thanks#v0.0.0",
+    "homepage":"https://github.com/elpete/box-thanks",
+    "documentation":"https://github.com/elpete/box-thanks",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/elpete/box-thanks"
+    },
+    "bugs":"https://github.com/elpete/box-thanks/issues",
+    "slug":"box-thanks",
+    "shortDescription":"Thank each of your depdencies by starring them on GitHub",
+    "description":"Thank each of your depdencies by starring them on GitHub",
+    "type":"modules",
+    "dependencies":{},
+    "devDependencies":{
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='elpete/box-thanks#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
